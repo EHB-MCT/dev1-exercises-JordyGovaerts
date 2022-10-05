@@ -21,5 +21,4 @@ context.rect(150,100,150,150);
 context.rect(150,150,100,100);
 context.stroke();
 
-
 }
