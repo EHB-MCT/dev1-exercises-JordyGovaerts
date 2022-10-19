@@ -14,3 +14,4 @@ export function strokeEllipse(x1,y1,radius) {
     context.ellipse(x1,y1,radius,radius,0,0, 180);
     context.stroke();
 }
+
