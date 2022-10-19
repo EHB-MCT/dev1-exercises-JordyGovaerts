@@ -15,9 +15,10 @@ function draw() {
 function drawCross() {
     let i = 0;
     while (i < 5) {
-        let step = ;
-        Utils.drawLine(50, step, 350, step);
-        Utils.drawLine(step, 50, step, 350);
-        i = ;
+        let step = 150;
+        let margin = 25;
+        Utils.drawLine(50, step + (margin * i) , 350, step+ ( margin * i) );
+        Utils.drawLine(step + (margin * i), 50, step + (margin * i), 350);
+        i = i + 1;
     }
 }
