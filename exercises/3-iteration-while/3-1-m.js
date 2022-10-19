@@ -14,9 +14,12 @@ function draw() {
 
 function drawWormhole() {
     let i = 0;
-    while () {
-        Utils.drawLine(, , , );
-        Utils.drawLine(, , , );
-        i = i++;
+    let step = 10;
+    while (i<=30) {
+        Utils.drawLine(200,200,50 + ( step * i),50 );
+        Utils.drawLine(200,200,50,50 + (step * i) );
+        Utils.drawLine(200,200,350,50 + ( step * i) );
+        Utils.drawLine(200,200,50 + (step * i ),350 );
+        i++;
     }
 }
