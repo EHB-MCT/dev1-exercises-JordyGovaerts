@@ -24,7 +24,7 @@ export function rgb(r,g,b) {
 
 export function drawBox(x,y,width,height) {
     context.beginPath();
-    context.fillStyle= "orange";
+    context.fillStyle= "brown";
     context.rect(x,y,width,height);
     context.stroke();
     context.fill();
