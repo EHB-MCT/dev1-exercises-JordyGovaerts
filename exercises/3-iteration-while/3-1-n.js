@@ -14,7 +14,7 @@ function draw() {
 function drawBlockyGradient() {
     let i = 0;
     while (i <= ) {
-        context.fillStyle = Utils.rgb();
+        context.fillStyle = Utils.rgb(i * 50, i * 50, i * 50);
         context.fillRect(, , , );
         i = i + 50;
     }
