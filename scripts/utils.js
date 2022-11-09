@@ -165,3 +165,11 @@ export function drawLine(x1, y1, x2, y2) {
     context.fill();
 
 }
+
+export function drawBackground(x1,y1,x2,y2) {
+
+    context.lineWidth = 2;
+    context.fillStyle = "black";
+    context.fillRect(x1, y1, x2, y2);
+
+}
