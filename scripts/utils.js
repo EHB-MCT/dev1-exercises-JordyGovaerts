@@ -169,7 +169,14 @@ export function drawLine(x1, y1, x2, y2) {
 export function drawBackground(x1,y1,x2,y2) {
 
     context.lineWidth = 2;
-    context.fillStyle = "black";
+    context.fillStyle = "white";
     context.fillRect(x1, y1, x2, y2);
+
+}
+
+export function drawRectangle(x1,y1,width,height) {
+    context.lineWidth = 2;
+    context.fillStyle = "white";
+    context.fillRect(x1,y1,width,height);
 
 }
