@@ -180,3 +180,13 @@ export function drawRectangle(x1,y1,width,height) {
     context.fillRect(x1,y1,width,height);
 
 }
+
+export function drawBallon(x,y,radiusx,radiusy,color) {
+    context.beginPath();
+    context.fillStyle = color;
+    context.ellipse(x,y,radiusx,radiusy,0,0,Math.PI * 2);
+    context.moveTo(x, y + radiusy );
+    context.lineTo(x, y +radiusy +30 );
+    context.stroke();
+    context.fill();
+}
