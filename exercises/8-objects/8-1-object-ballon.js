@@ -40,12 +40,7 @@ requestAnimationFrame(Update);
 }
 
 function drawBallon(Balloon){
-    context.beginPath();
-    context.fillStyle = Balloon.color;
-    context.ellipse(Balloon.x,Balloon.y,Balloon.radiusx,Balloon.radiusy,0,0,Math.PI * 2);
-    context.moveTo(Balloon.x, Balloon.y + Balloon.radiusy );
-    context.lineTo(Balloon.x, Balloon.y + Balloon.radiusy +30 );
-    context.stroke();
-    context.fill();
-    console.log(context.fillStyle);
+    Utils.drawBallon(Balloon.x,Balloon.y,Balloon.radiusx,Balloon.radiusy,Balloon.color);
+
+    
 }
