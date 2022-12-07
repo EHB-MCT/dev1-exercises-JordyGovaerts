@@ -190,3 +190,10 @@ export function drawBallon(x,y,radiusx,radiusy,color) {
     context.stroke();
     context.fill();
 }
+
+export function drawBall(x,y,size,color) {
+    context.beginPath();
+    context.fillStyle = color;
+    context.ellipse(x,y,size,size,0,0,Math.PI * 2);
+    context.fill();
+}
